@@ -144,8 +144,6 @@ a {
   width: 505px;
   margin-right: 96px;
 }
-.services__content-box {
-}
 
 .services__content-title {
   color: var(--purple-color);
@@ -340,6 +338,9 @@ a {
   justify-content: space-between;
 }
 
+.contacts__info {
+  margin-top: 50px;
+}
 .contacts__list {
   list-style: none;
 }
@@ -404,11 +405,228 @@ a {
   align-items: center;
   height: 100px;
   color: var(--white-color);
-  
 }
 
-@media (max-width: 1200px){
-  body{
-  display: none;
+@media (max-width: 1140px) {
+  .services__item:hover {
+    width: 450px;
+  }
 }
+
+@media (max-width: 1024px) {
+  .header__images {
+    width: 80%;
+  }
+  .services {
+    padding-top: 250px;
+  }
+  .services__inner {
+    flex-wrap: wrap;
+  }
+  .services__list {
+    order: -1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__item:hover {
+    width: 100%;
+  }
+  .services__content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .benefits__images {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    min-height: 600px;
+  }
+  .logo img {
+    width: 90%;
+  }
+  .phone {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .header__title {
+    font-size: 54px;
+    line-height: 74px;
+  }
+  .header__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .header__text {
+    margin: 20px 0;
+  }
+
+  .header__social {
+    padding: 40px 0 20px 60px;
+  }
+  .contacts__inner {
+    display: block;
+    text-align: center;
+  }
+  .contacts__list {
+    padding-bottom: 30px;
+  }
+  .contacts__input {
+    width: 100%;
+  }
+  .contacts__btn {
+    margin: 30px 100px 0;
+  }
+  .contacts__title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__inner {
+    text-align: center;
+  }
+  .benefits__list {
+    padding: 25px 15px;
+  }
+  .benefits__item {
+    width: 100%;
+  }
+  .benefits__title {
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer__social {
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0 25px;
+  }
+  .footer .logo img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .header__content {
+    padding-top: 0;
+    text-align: center;
+  }
+  .header__social {
+    padding: 40px 0 20px 0;
+  }
+  .social {
+    justify-content: center;
+  }
+  .services {
+    padding-top: 150px;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .services__content {
+    text-align: center;
+  }
+  .services__item::before {
+    top: 5px;
+  }
+  .title::after {
+    display: none;
+  }
+  .services__content-text,
+  .services__content-title {
+    text-align: center;
+  }
+
+  .services__inner,
+  .benefits,
+  .carousel {
+    margin-bottom: 50px;
+  }
+  .benefits__item-num {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__top {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .header__title {
+    margin-bottom: 20px;
+  }
+  .header__images {
+    position: static;
+    width: 100%;
+  }
+  .services {
+    padding-top: 75px;
+  }
+  .services__item {
+    padding: 10px 15px 10px 60px;
+  }
+  .services__item::before {
+    left: 11px;
+  }
+  .button--decor::after {
+    margin-left: 110px;
+  }
+  .button--decor::before {
+    right: -50px;
+  }
+  .carousel__item-img {
+    width: 100%;
+  }
+  .carousel .slick-dots button {
+    width: 17px;
+  }
+  .contacts__form {
+    padding: 50px 10px 57px;
+  }
+  .contacts__btn {
+    margin: 30px 0 0;
+  }
+  .button--decor::after,
+  .button--decor::before {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .services__content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__title {
+    font-size: 44px;
+    line-height: 50px;
+  }
 }
